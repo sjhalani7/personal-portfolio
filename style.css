@@ -382,18 +382,18 @@ footer {
 
 .view-project-btn {
     display: inline-block;
-    background-color: rgba(51, 51, 51, 1); /* Button color */
-    color: white; /* Text color */
-    padding: 10px 20px; /* Button padding */
-    margin-top: 15px; /* Space above the button */
-    text-decoration: none; /* Remove underline from link */
-    border-radius: 5px; /* Rounded corners */
-    text-align: center; /* Center the text inside the button */
-    transition: background-color 0.2s ease-in-out; /* Smooth transition for hover effect */
+    background-color: rgba(51, 51, 51, 1); 
+    color: white; 
+    padding: 10px 20px;
+    margin-top: 15px; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    text-align: center; 
+    transition: background-color 0.2s ease-in-out; 
 }
 
 .view-project-btn:hover {
-    background-color: #304d6d; /* Button color on hover */
+    background-color: #304d6d; 
 }
 
 .project-image{
