@@ -45,5 +45,76 @@
             </div>
         </div>
     </header>
+    <main>
+        <section id="subpage" class="subpage-experiences">
+            <div class="subpage-card" onclick="toggleCard(this)">
+                <div class="card-content">
+                    <div class="card-header">
+                        <h2>Research Lead</h2>
+                        <h3>Online Hate Speech Spreader Detection using Modified PageRank Algorithm </h3>
+                        <p class="activity-duration"> October 2021 - Present </p>
+                    </div>
+                    <div class="card-body">
+                            <ul>
+                                <li>Lead team of three people to detect & flag hate speech spreaders on online social networks using Python & libraries like sklearn </li>
+                                <li> Modify Google’s PageRank algorithm to implement a graph-based model using adjacency matrices to calculate user influence & measure hate speech spread within a user network using data & network analysis on pre-trained machine learning models</li>
+                                <li> Co-author research paper detailing significant findings, accepted for presentation at the 2023 International DSML conference</li>
+                            </ul>
+                        <div class="more-info">
+                            <p>Experience description here...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="research-logo">
+                    <img src="research.png" alt="HSD img" class="research-image">
+                </div>
+                <i class="fa-solid fa-angle-up arrow-up-icon"></i>
+                <i class="fa-solid fa-angle-down arrow-down-icon"></i>
+            </div>
+
+            <div class="subpage-card" onclick="toggleCard(this)">
+            <div class="card-content">
+                <div class="card-header">
+                    <h2>Research Assistant </h2>
+                    <h3> TailorEd: Augmenting Pedagogy using Machine Learning </h3>
+                    <p class="activity-duration">November 2021 - September 2023</p>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li> Examined relationship between pedagogical techniques and student performance using machine learning </li>
+                        <li> Develop APIs using Flask for an effective link between the front-end website tool & back-end database of analytical results </li>
+                    </ul>
+                    <div class="more-info">
+                        <p>Experience description here...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="research-logo">
+                <img src="research2.jpeg" alt="Teaching image" class="research-image">
+            </div>
+            <i class="fa-solid fa-angle-up arrow-up-icon"></i>
+            <i class="fa-solid fa-angle-down arrow-down-icon"></i>
+        </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2023 by Shiv Jhalani</p>
+    </footer>
+    <script>
+        window.addEventListener('scroll', function() {
+          const navbar = document.querySelector('.navbar');
+          if(window.scrollY > 0) { // If the page is scrolled down from the top
+            navbar.classList.add('solid-background');
+          } else {
+            navbar.classList.remove('solid-background');
+          }
+        });
+
+        function toggleCard(card) {
+    card.classList.toggle('expanded');
+    }
+    </script>
+</body>
+</html>
 </body>
 </html>
