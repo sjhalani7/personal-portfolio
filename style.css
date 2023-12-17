@@ -67,6 +67,7 @@ header {
     background-image: url('bg.jpg'); 
     height: 75vh;
     background-size: cover;
+    max-width: 100%;
     background-position: center;
     display: flex;
     justify-content: space-between; 
@@ -175,7 +176,7 @@ header {
 .card-content p {
     font-size: 1em;
     flex-grow: 1; 
-    height: 60px;
+    /* height: 60px; */
 }
 
 .btn {
@@ -206,6 +207,7 @@ header {
 .background-image-research {
     background-image: url('bg2.jpeg'); 
     height: 75vh;
+    max-width: 100%;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -262,4 +264,73 @@ footer {
     text-align: center;
     padding: 1px 0;
 }
+
+.subpage-experiences {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.subpage-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    padding: 20px;
+    width: 80%;
+    max-width: 1000px;
+    cursor: pointer; 
+    overflow: hidden; 
+    transition: max-height 1.5s ease;
+}
+
+.subpage-card .more-info {
+    display: none; 
+    margin-top: 50px;
+}
+
+.subpage-card.expanded .more-info {
+    display: block; 
+}
+
+.subpage-card.expanded {
+    max-height: 1000px; 
+}
+
+.subpage-description {
+    flex: 1; 
+}
+.company-logo {
+    height: 150px; 
+    width: auto; 
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.subpage-card h2 {
+    color: #333;
+    margin: 0;
+}
+
+.subpage-card h3 {
+    color: #555;
+    margin-top: 5px;
+}
+
+.activity-duration {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 0px;
+}
+
+
+@media (max-width: 768px) {
+    .internship-card {
+        width: 95%; 
+    }
+}
+
 
