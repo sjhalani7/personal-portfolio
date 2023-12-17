@@ -286,11 +286,18 @@ footer {
     cursor: pointer; 
     overflow: hidden; 
     transition: max-height 1.5s ease;
+    position: relative;
 }
 
 .subpage-card .more-info {
     display: none; 
     margin-top: 50px;
+}
+
+.subpage-card:hover{
+    transform: scale(1.05);
+    transition: all 0.4s ease-in-out;
+    border: 2px solid rgba(51, 51, 51, 0.80);
 }
 
 .subpage-card.expanded .more-info {
@@ -333,4 +340,35 @@ footer {
     }
 }
 
+.arrow-down-icon {
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    color: rgba(51, 51, 51, 0.7);
+}
 
+.subpage-card.expanded .arrow-down-icon {
+    display: none;
+}
+
+.arrow-up-icon {
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    color: white;
+}
+.subpage-card.expanded .arrow-up-icon {
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    color: rgba(51, 51, 51, 0.7);
+}
