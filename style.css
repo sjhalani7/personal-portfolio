@@ -285,7 +285,7 @@ footer {
     max-width: 1000px;
     cursor: pointer; 
     overflow: hidden; 
-    transition: max-height 1.5s ease;
+    transition: max-height 4.5s ease-in-out;
     position: relative;
 }
 
@@ -305,7 +305,8 @@ footer {
 }
 
 .subpage-card.expanded {
-    max-height: 1000px; 
+    max-height: 10000px; 
+    transition: max-height 2.5s ease-in-out;
 }
 
 .subpage-description {
