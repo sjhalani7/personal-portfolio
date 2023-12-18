@@ -335,8 +335,66 @@ footer {
 
 
 @media (max-width: 768px) {
-    .internship-card {
-        width: 95%; 
+    .navbar {
+        padding: 0px 0;
+    }
+
+    .navbar ul li a {
+        padding: 6px 8px; 
+        font-size: 0.5em; 
+        margin: 1px; 
+    }
+    .welcome-text, .subpage-welcome-text {
+        padding-left: 10px;
+        margin-left: 0;
+        padding-right: 10px;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .navbar .social-links i {
+        font-size: 15px;
+        margin-right: 2px; 
+        margin-left: 2px;
+    }
+
+
+    .bio, .highlights {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .background-image,
+    .background-image-intern,
+    .background-image-research,
+    .background-image-project,
+    .background-image-campus {
+        height: 50vh;
+        background-position: top;
+    }
+
+    .profile-container img {
+        margin-left: 10px;
+        margin-top: 20%;
+    }
+
+    .subpage-experiences .subpage-card {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .subpage-description, .company-logo, .research-image, .project-image, .campus-image {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 
