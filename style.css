@@ -262,20 +262,20 @@ header {
 footer {
     background-color: rgba(51, 51, 51, 0.1);
     text-align: center;
-    padding: 10px 0; /* Adjusted padding for better spacing */
+    padding: 10px 0; 
     display: flex;
-    justify-content: space-between; /* Separates the text and icons */
+    justify-content: space-between; 
     align-items: center;
 }
 
 footer p {
-    margin: 0; /* Resets any default margin */
+    margin: 0; 
 }
 
 .footer-links a {
     color: black; 
-    margin: 0 15px; /* Spacing around the icons */
-    font-size: 20px; /* Size of the icons */
+    margin: 0 15px; 
+    font-size: 20px; 
 }
 
 .footer-links {
