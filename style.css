@@ -516,3 +516,43 @@ footer p {
     transform: scale(1.1); 
     transition: color 0.3s ease, transform 0.3s ease;
 }
+
+#chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#chatbot-button {
+    background-color: #ca845c; /* Your primary color */
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#chatbot-button i {
+    color: white;
+    font-size: 20px;
+}
+
+#chatbot-content {
+    background-color: white;
+    width: 300px;
+    height: 400px;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    margin-top: 20px;
+    display: none; /* Hidden by default */
+}
+
+/* A class to show the chat content */
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}

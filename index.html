@@ -110,6 +110,17 @@
             </a>
         </div>
     </footer>
+    <div id="chatbot">
+        <div id="chatbot-button" onclick="toggleChatbot()">
+            <i class="fa fa-comments" aria-hidden="true"></i>
+        </div>
+        <div id="chatbot-content" class="hidden">
+            <!-- Chat content goes here -->
+            <p>How can I help you?</p>
+            <!-- Add more chat elements as needed -->
+        </div>
+    </div>
+    
     <script>
         window.addEventListener('scroll', function() {
           const navbar = document.querySelector('.navbar');
@@ -119,6 +130,24 @@
             navbar.classList.remove('solid-background');
           }
         });
+    </script>
+    <script src="https://kit.fontawesome.com/b375794b10.js" crossorigin="anonymous"></script>
+    <script>
+        window.addEventListener('scroll', function() {
+          // Your existing navbar script
+        });
+
+        // Add the chatbot toggle JavaScript function here
+        function toggleChatbot() {
+            var chatbotContent = document.getElementById("chatbot-content");
+            if (chatbotContent.classList.contains("hidden")) {
+                chatbotContent.classList.remove("hidden");
+                chatbotContent.classList.add("visible");
+            } else {
+                chatbotContent.classList.remove("visible");
+                chatbotContent.classList.add("hidden");
+            }
+        }
     </script>
 </body>
 </html>
